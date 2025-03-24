@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/download"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".ProfileActivity">
+
+    <!-- Top Section (Menu & Profile Title) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@string/menu_icon"
+            android:src="@drawable/menu"
+            android:scaleType="fitCenter"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="PROFILE"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circle_profile"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/profile"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Profile Info Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_purple"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emma_phillips"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/profile_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fashion_model"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_581_307_6902"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emma_phillips_gmail_com"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/editProfile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_blue"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Wallet & Orders Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_purple"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:weightSum="2"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/profile_wallet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_140_00_n_wallet"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DEC2F2"/>
+
+        <TextView
+            android:id="@+id/profile_orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_12_n_orders"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Favorites & Settings Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <Button
+            android:id="@+id/favorites_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/favorites"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_pink"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings2"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_purple"
+            android:paddingVertical="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

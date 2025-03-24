@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!-- Menu Button (Left) -->
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow"
+
+            />
+
+        <!-- PROFILE Text (Centered on Screen) -->
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/privacyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/general"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:padding="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/dark_mode"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="200dp"/>  <!-- Adds space -->
+
+            <Switch
+                android:id="@+id/toggleSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="#ffff"
+                android:trackTint="#1aff1a"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/email_notifications"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginEnd="136dp"/>  <!-- Adds space -->
+
+            <Switch
+                android:id="@+id/toggleSwitch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="#ffff"
+                android:trackTint="#1aff1a"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/push_notifications"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginEnd="140dp"/>  <!-- Adds space -->
+
+            <Switch
+                android:id="@+id/toggleSwitch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="#ffff"
+                android:trackTint="#1aff1a"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/support"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/help_center"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/help_center"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_pink"
+
+        />
+    <Button
+        android:id="@+id/developers_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/about_developers"
+        android:background="@drawable/rounded_pink"
+        android:layout_marginBottom="12dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="SIGN OUT"
+        android:background="@drawable/rounded_pink"
+
+
+        />
+</LinearLayout>
